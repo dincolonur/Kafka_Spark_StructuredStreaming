@@ -13,26 +13,26 @@ Python 3.6 or above
 How to use the application
 In order to run the application you will need to start:
 
-Zookeeper:
-/usr/bin/zookeeper-server-start config/zookeeper.properties
+##Zookeeper:
+`/usr/bin/zookeeper-server-start config/zookeeper.properties`
 
-Kafka server:
-/usr/bin/kafka-server-start config/server.properties
+##Kafka server:
+`/usr/bin/kafka-server-start config/server.properties`
 
-Insert data into topic:
-python kafka_server.py
+##Insert data into topic:
+`python3 kafka_server.py`
 
-Kafka consumer:
-kafka-console-consumer --topic "topic-name" --from-beginning --bootstrap-server localhost:9092
+##Kafka consumer:
+`kafka-console-consumer --topic "topic-name" --from-beginning --bootstrap-server localhost:9092`
 
-Run Spark job:
-spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.4 --master local[*] data_stream.py
+##Run Spark job:
+`spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.4.0 --master local[*] data_stream.py`
 
-Questions:
+##Questions:
 
 1- How did changing values on the SparkSession property parameters affect the throughput and latency of the data?
 
 2- What were the 2-3 most efficient SparkSession property key/value pairs? Through testing multiple variations on values, how can you tell these were the most optimal?
 
-Screenshots:
+##Screenshots:
 Screenshots are in the screenshots folder.
