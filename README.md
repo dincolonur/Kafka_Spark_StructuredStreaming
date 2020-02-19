@@ -1,10 +1,9 @@
 # KafkaSparkStructuredStreaming
 
-SF Crime Statistics with Spark Streaming Project
-Introduction
+## SF Crime Statistics with Spark Streaming Project
 The aim of the project is to create an Streaming application with Spark that connects to a Kafka cluster, reads and process the data.
 
-Requirements
+## Requirements
 Java 1.8.x
 Scala 2.11.x
 Spark 2.4.x
